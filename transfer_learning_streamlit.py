@@ -43,6 +43,7 @@ def predict(image):
     return classes[predicted_class.item()], max_value.item() * 100
 
 st.title('Vegetable Classification')
+st.write('you can upload your image of veggies below')
 
 uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
 if uploaded_file is not None:
